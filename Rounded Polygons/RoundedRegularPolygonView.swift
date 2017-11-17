@@ -8,7 +8,8 @@
 
 import UIKit
 
-@objc @IBDesignable public class RoundedRegularPolygonView: UIView {
+@objc @IBDesignable
+public class RoundedRegularPolygonView: UIView {
 
 	@objc @IBInspectable var color: UIColor = .red {
 		didSet {
