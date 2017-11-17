@@ -10,7 +10,7 @@ import UIKit
 
 @objc @IBDesignable public class RoundedRegularPolygonView: UIView {
 
-	@objc @IBInspectable var color: UIColor = UIColor.redColor() {
+	@objc @IBInspectable var color: UIColor = .red {
 		didSet {
 			self.setNeedsDisplay()
 		}
@@ -28,7 +28,7 @@ import UIKit
 		}
 	}
 	
-	@objc @IBInspectable var scale: CGPoint = CGPointMake(1, 1) {
+	@objc @IBInspectable var scale: CGPoint = CGPoint(x: 1, y: 1) {
 		didSet {
 			self.setNeedsDisplay()
 		}
@@ -41,23 +41,23 @@ import UIKit
 	}
 
 	
-    override public func drawRect(rect: CGRect) {
+	override public func draw(_ rect: CGRect) {
 		
 		let polygonPath = UIBezierPath(roundedRegularPolygon: rect, numberOfSides: sides, cornerRadius: cornerRadius)
 
-		polygonPath.applyRotation(rotation)
+		polygonPath.applyRotation(angle: rotation)
 		
-		polygonPath.applyScale(scale)
+		polygonPath.applyScale(scale: scale)
 		
-		polygonPath.closePath()
+		polygonPath.close()
 		
 		color.setFill()
 		polygonPath.fill()
 
     }
 	
-	override public func intrinsicContentSize() -> CGSize {
-		return CGSizeMake(60, 60)
+	override public var intrinsicContentSize: CGSize {
+		return CGSize(width: 60, height: 60)
 	}
 
 }

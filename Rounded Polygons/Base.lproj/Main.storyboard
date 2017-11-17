@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,7 +32,7 @@
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khk-SV-B2m" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="khk-SV-B2m" secondAttribute="height" multiplier="1:1" id="KaO-ZB-L7p"/>
                                                 </constraints>
@@ -37,7 +41,7 @@
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657342657344" blue="0.46050043706293708" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="0.0"/>
@@ -52,16 +56,16 @@
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfh-H1-Ev7" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
                                                 <rect key="frame" x="200" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="30"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
-                                                        <real key="value" value="-18"/>
+                                                        <real key="value" value="-45"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="sides">
                                                         <integer key="value" value="4"/>
@@ -73,7 +77,7 @@
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Q7-0f-8vD" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
                                                 <rect key="frame" x="400" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="0Q7-0f-8vD" secondAttribute="height" multiplier="1:1" id="eSv-yl-CQG"/>
                                                 </constraints>
@@ -82,7 +86,7 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="0.0"/>
@@ -96,17 +100,17 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="nfh-H1-Ev7" firstAttribute="width" secondItem="nfh-H1-Ev7" secondAttribute="height" multiplier="1:1" id="lWy-Cp-6T2"/>
                                         </constraints>
                                     </stackView>
                                     <stackView clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jDM-t9-fcU">
-                                        <rect key="frame" x="0.0" y="210" width="560" height="160"/>
+                                        <rect key="frame" x="0.0" y="210" width="560" height="160.5"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-K9-YQD" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="160.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Obd-K9-YQD" secondAttribute="height" multiplier="1:1" id="0Px-Vi-Ujg"/>
                                                 </constraints>
@@ -115,7 +119,7 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="0.0"/>
@@ -130,7 +134,7 @@
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tp-mr-fS3" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
                                                 <rect key="frame" x="200" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="7Tp-mr-fS3" secondAttribute="height" multiplier="1:1" id="Rsn-hA-0CJ"/>
                                                 </constraints>
@@ -139,7 +143,7 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="0.0"/>
@@ -153,8 +157,8 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1P4-sg-ggB" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
-                                                <rect key="frame" x="400" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="400" y="0.0" width="160" height="160.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1P4-sg-ggB" secondAttribute="height" multiplier="1:1" id="qAr-dq-Rix"/>
                                                 </constraints>
@@ -163,7 +167,7 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="0.0"/>
@@ -177,14 +181,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eC5-lT-D8Y">
                                         <rect key="frame" x="0.0" y="420" width="560" height="160"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdV-tY-jUc" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qdV-tY-jUc" secondAttribute="height" multiplier="1:1" id="2zZ-pZ-bwU"/>
                                                 </constraints>
@@ -193,13 +197,13 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="sides">
-                                                        <integer key="value" value="6"/>
+                                                        <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="point" keyPath="scale">
                                                         <point key="value" x="1" y="1"/>
@@ -207,14 +211,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8a-oi-Br7" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
-                                                <rect key="frame" x="200" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="200" y="0.5" width="160" height="159.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="30"/>
@@ -229,7 +233,7 @@
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzV-3a-pJp" customClass="RoundedRegularPolygonView" customModule="Rounded_Polygons" customModuleProvider="target">
                                                 <rect key="frame" x="400" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="LzV-3a-pJp" secondAttribute="height" multiplier="1:1" id="fe8-L1-Vbv"/>
                                                 </constraints>
@@ -238,7 +242,7 @@
                                                         <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.38592657339999997" blue="0.46050043709999999" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="value" red="0.98762118816375732" green="0.28399750590324402" blue="0.3863980770111084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rotation">
                                                         <real key="value" value="30"/>
@@ -252,20 +256,20 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="k8a-oi-Br7" firstAttribute="width" secondItem="k8a-oi-Br7" secondAttribute="height" multiplier="1:1" id="zRl-y0-K6w"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="gej-p6-Z2Y" firstAttribute="height" secondItem="jDM-t9-fcU" secondAttribute="height" id="8TG-Ww-qrx"/>
                                     <constraint firstItem="gej-p6-Z2Y" firstAttribute="height" secondItem="eC5-lT-D8Y" secondAttribute="height" id="J23-HA-xv6"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UoJ-MP-0oS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ekT-F9-rtz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UoJ-MP-0oS" secondAttribute="trailing" id="lOn-ow-YZH"/>
@@ -273,6 +277,7 @@
                             <constraint firstItem="UoJ-MP-0oS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pzw-Re-dlu"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
