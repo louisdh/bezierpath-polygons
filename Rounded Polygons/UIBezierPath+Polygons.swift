@@ -1,5 +1,5 @@
 //
-//  UIBezierPathExtension.swift
+//  UIBezierPath+Polygons.swift
 //  Rounded Polygons
 //
 //  Created by Louis D'hauwe on 24/11/15.
@@ -119,7 +119,8 @@ extension UIBezierPath {
 
 public extension UIBezierPath {
 
-	@objc public convenience init(roundedRegularPolygon rect: CGRect, numberOfSides: Int, cornerRadius: CGFloat) {
+	@objc
+	public convenience init(roundedRegularPolygon rect: CGRect, numberOfSides: Int, cornerRadius: CGFloat) {
 		guard numberOfSides > 2 else {
 			self.init()
 			return
@@ -137,7 +138,8 @@ public extension UIBezierPath {
 
 public extension UIBezierPath {
 
-	@objc public func applyRotation(angle: CGFloat) {
+	@objc
+	public func applyRotation(angle: CGFloat) {
 		
 		let bounds = self.cgPath.boundingBox
 		let center = CGPoint(x: bounds.midX, y: bounds.midY)
@@ -153,7 +155,8 @@ public extension UIBezierPath {
 		
 	}
 	
-	@objc public func applyScale(scale: CGPoint) {
+	@objc
+	public func applyScale(scale: CGPoint) {
 		
 		let center = CGPoint(x: bounds.midX, y: bounds.midY)
 		

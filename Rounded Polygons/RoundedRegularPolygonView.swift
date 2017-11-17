@@ -11,37 +11,41 @@ import UIKit
 @objc @IBDesignable
 public class RoundedRegularPolygonView: UIView {
 
-	@objc @IBInspectable var color: UIColor = .red {
+	@objc @IBInspectable
+	var color: UIColor = .red {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
-	@objc @IBInspectable var rotation: CGFloat = 0.0 {
+	@objc @IBInspectable
+	var rotation: CGFloat = 0.0 {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
-	@objc @IBInspectable var cornerRadius: CGFloat = 0.0 {
+	@objc @IBInspectable
+	var cornerRadius: CGFloat = 0.0 {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
-	@objc @IBInspectable var scale: CGPoint = CGPoint(x: 1, y: 1) {
+	@objc @IBInspectable
+	var scale: CGPoint = CGPoint(x: 1, y: 1) {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
-	@objc @IBInspectable var sides: Int = 6 {
+	@objc @IBInspectable
+	var sides: Int = 6 {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 
-	
 	override public func draw(_ rect: CGRect) {
 		
 		let polygonPath = UIBezierPath(roundedRegularPolygon: rect, numberOfSides: sides, cornerRadius: cornerRadius)

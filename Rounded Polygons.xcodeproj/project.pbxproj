@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEDDBC541C14F0010020420B /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDBC531C14F0010020420B /* UIBezierPathExtension.swift */; };
+		BEDDBC541C14F0010020420B /* UIBezierPath+Polygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDBC531C14F0010020420B /* UIBezierPath+Polygons.swift */; };
 		BEEC1BF81C03941400E7A322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC1BF71C03941400E7A322 /* AppDelegate.swift */; };
 		BEEC1BFA1C03941400E7A322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC1BF91C03941400E7A322 /* ViewController.swift */; };
 		BEEC1BFD1C03941400E7A322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC1BFB1C03941400E7A322 /* Main.storyboard */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BEDDBC531C14F0010020420B /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		BEDDBC531C14F0010020420B /* UIBezierPath+Polygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygons.swift"; sourceTree = "<group>"; };
 		BEEC1BF41C03941400E7A322 /* Rounded Polygons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rounded Polygons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEC1BF71C03941400E7A322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEEC1BF91C03941400E7A322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +26,6 @@
 		BEEC1C011C03941400E7A322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEEC1C031C03941400E7A322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEC1C091C03943400E7A322 /* RoundedRegularPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRegularPolygonView.swift; sourceTree = "<group>"; };
-		BEEC1C0B1C03A83B00E7A322 /* Rounded Polygons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rounded Polygons-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +58,14 @@
 		BEEC1BF61C03941400E7A322 /* Rounded Polygons */ = {
 			isa = PBXGroup;
 			children = (
-				BEDDBC531C14F0010020420B /* UIBezierPathExtension.swift */,
+				BEDDBC531C14F0010020420B /* UIBezierPath+Polygons.swift */,
+				BEEC1C091C03943400E7A322 /* RoundedRegularPolygonView.swift */,
 				BEEC1BF71C03941400E7A322 /* AppDelegate.swift */,
 				BEEC1BF91C03941400E7A322 /* ViewController.swift */,
 				BEEC1BFB1C03941400E7A322 /* Main.storyboard */,
 				BEEC1BFE1C03941400E7A322 /* Assets.xcassets */,
 				BEEC1C001C03941400E7A322 /* LaunchScreen.storyboard */,
 				BEEC1C031C03941400E7A322 /* Info.plist */,
-				BEEC1C091C03943400E7A322 /* RoundedRegularPolygonView.swift */,
-				BEEC1C0B1C03A83B00E7A322 /* Rounded Polygons-Bridging-Header.h */,
 			);
 			path = "Rounded Polygons";
 			sourceTree = "<group>";
@@ -145,7 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEC1BFA1C03941400E7A322 /* ViewController.swift in Sources */,
-				BEDDBC541C14F0010020420B /* UIBezierPathExtension.swift in Sources */,
+				BEDDBC541C14F0010020420B /* UIBezierPath+Polygons.swift in Sources */,
 				BEEC1BF81C03941400E7A322 /* AppDelegate.swift in Sources */,
 				BEEC1C0A1C03943400E7A322 /* RoundedRegularPolygonView.swift in Sources */,
 			);
@@ -285,7 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.Rounded-Polygons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Rounded Polygons/Rounded Polygons-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -300,7 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.Rounded-Polygons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Rounded Polygons/Rounded Polygons-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
