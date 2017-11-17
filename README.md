@@ -1,4 +1,4 @@
-# UIBezierPath + Polygons
+# UIBezierPath + Polygons 🔸 🔺 🔷
 
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat")](https://developer.apple.com/swift/)
 [![Twitter](https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat)](http://twitter.com/LouisDhauwe)
