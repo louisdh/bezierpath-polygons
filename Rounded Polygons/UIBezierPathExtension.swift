@@ -9,9 +9,56 @@
 import Foundation
 import UIKit
 
+extension UIBezierPath {
 
-public extension UIBezierPath {
+	private func addPointsAsRoundedPolygon(points: [CGPoint], cornerRadius: CGFloat) {
+		
+		lineCapStyle = .round
+		usesEvenOddFillRule = true
+		
+		let len = points.count
+		
+		let prev = points[len - 1]
+		let curr = points[0 % len]
+		let next = points[1 % len]
+		
+		addPoint(prev: prev, curr: curr, next: next, cornerRadius: cornerRadius, first: true)
+		
+		for i in 0..<len {
+			
+			let p = points[i]
+			let c = points[(i + 1) % len]
+			let n = points[(i + 2) % len]
+			
+			addPoint(prev: p, curr: c, next: n, cornerRadius: cornerRadius, first: false)
+			
+		}
+		
+		close()
+		
+	}
 	
+	private func polygonPoints(sides: Int, x: CGFloat, y: CGFloat, radius: CGFloat) -> [CGPoint] {
+		
+		let angle = degreesToRadians(360 / CGFloat(sides))
+		
+		let cx = x // x origin
+		let cy = y // y origin
+		let r  = radius // radius of circle
+		
+		var i = 0
+		var points = [CGPoint]()
+		
+		while i < sides {
+			let xP = cx + r * cos(angle * CGFloat(i))
+			let yP = cy + r * sin(angle * CGFloat(i))
+			points.append(CGPoint(x: xP, y: yP))
+			i += 1
+		}
+		
+		return points
+	}
+
 	private func addPoint(prev: CGPoint, curr: CGPoint, next: CGPoint, cornerRadius: CGFloat, first: Bool) {
 		
 		// prev <- curr
@@ -68,8 +115,15 @@ public extension UIBezierPath {
 		
 	}
 	
+}
+
+public extension UIBezierPath {
+
 	@objc public convenience init(roundedRegularPolygon rect: CGRect, numberOfSides: Int, cornerRadius: CGFloat) {
-		assert(numberOfSides > 2)
+		guard numberOfSides > 2 else {
+			self.init()
+			return
+		}
 		
 		self.init()
 		
@@ -78,57 +132,11 @@ public extension UIBezierPath {
 		self.addPointsAsRoundedPolygon(points: points, cornerRadius: cornerRadius)
 		
 	}
-	
-	public func addPointsAsRoundedPolygon(points: [CGPoint], cornerRadius: CGFloat) {
-		
-		lineCapStyle = .round
-		usesEvenOddFillRule = true
-		
-		let len = points.count
-		
-		let prev = points[len - 1]
-		let curr = points[0 % len]
-		let next = points[1 % len]
-		
-		
-		addPoint(prev: prev, curr: curr, next: next, cornerRadius: cornerRadius, first: true)
-		
-		for i in 0..<len {
-			
-			let p = points[i]
-			let c = points[(i + 1) % len]
-			let n = points[(i + 2) % len]
-			
-			addPoint(prev: p, curr: c, next: n, cornerRadius: cornerRadius, first: false)
 
-		}
-		
-		close()
-		
-	}
-	
-	public func polygonPoints(sides: Int, x: CGFloat, y: CGFloat, radius: CGFloat) -> [CGPoint] {
-		
-		let angle = degreesToRadians(360 / CGFloat(sides))
-		
-		let cx = x // x origin
-		let cy = y // y origin
-		let r  = radius // radius of circle
-		
-		var i = 0
-		var points = [CGPoint]()
-		
-		while i < sides {
-			let xP = cx + r * cos(angle * CGFloat(i))
-			let yP = cy + r * sin(angle * CGFloat(i))
-			points.append(CGPoint(x: xP, y: yP))
-			i += 1
-		}
-		
-		return points
-	}
-	
-	
+}
+
+public extension UIBezierPath {
+
 	@objc public func applyRotation(angle: CGFloat) {
 		
 		let bounds = self.cgPath.boundingBox
@@ -159,7 +167,6 @@ public extension UIBezierPath {
 		apply(fromOrigin)
 		
 	}
-	
 	
 }
 
