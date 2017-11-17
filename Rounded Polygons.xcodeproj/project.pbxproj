@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEDDBC541C14F0010020420B /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDBC531C14F0010020420B /* UIBezierPathExtension.swift */; };
+		BEEC1BF81C03941400E7A322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC1BF71C03941400E7A322 /* AppDelegate.swift */; };
+		BEEC1BFA1C03941400E7A322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC1BF91C03941400E7A322 /* ViewController.swift */; };
+		BEEC1BFD1C03941400E7A322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC1BFB1C03941400E7A322 /* Main.storyboard */; };
+		BEEC1BFF1C03941400E7A322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEC1BFE1C03941400E7A322 /* Assets.xcassets */; };
+		BEEC1C021C03941400E7A322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC1C001C03941400E7A322 /* LaunchScreen.storyboard */; };
+		BEEC1C0A1C03943400E7A322 /* RoundedRegularPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC1C091C03943400E7A322 /* RoundedRegularPolygonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEDDBC531C14F0010020420B /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		BEEC1BF41C03941400E7A322 /* Rounded Polygons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rounded Polygons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEC1BF71C03941400E7A322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEEC1BF91C03941400E7A322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEEC1BFC1C03941400E7A322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEEC1BFE1C03941400E7A322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEEC1C011C03941400E7A322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEEC1C031C03941400E7A322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEC1C091C03943400E7A322 /* RoundedRegularPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRegularPolygonView.swift; sourceTree = "<group>"; };
+		BEEC1C0B1C03A83B00E7A322 /* Rounded Polygons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rounded Polygons-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEEC1BF11C03941400E7A322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEEC1BEB1C03941400E7A322 = {
+			isa = PBXGroup;
+			children = (
+				BEEC1BF61C03941400E7A322 /* Rounded Polygons */,
+				BEEC1BF51C03941400E7A322 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEEC1BF51C03941400E7A322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC1BF41C03941400E7A322 /* Rounded Polygons.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEEC1BF61C03941400E7A322 /* Rounded Polygons */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDBC531C14F0010020420B /* UIBezierPathExtension.swift */,
+				BEEC1BF71C03941400E7A322 /* AppDelegate.swift */,
+				BEEC1BF91C03941400E7A322 /* ViewController.swift */,
+				BEEC1BFB1C03941400E7A322 /* Main.storyboard */,
+				BEEC1BFE1C03941400E7A322 /* Assets.xcassets */,
+				BEEC1C001C03941400E7A322 /* LaunchScreen.storyboard */,
+				BEEC1C031C03941400E7A322 /* Info.plist */,
+				BEEC1C091C03943400E7A322 /* RoundedRegularPolygonView.swift */,
+				BEEC1C0B1C03A83B00E7A322 /* Rounded Polygons-Bridging-Header.h */,
+			);
+			path = "Rounded Polygons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEEC1BF31C03941400E7A322 /* Rounded Polygons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEC1C061C03941400E7A322 /* Build configuration list for PBXNativeTarget "Rounded Polygons" */;
+			buildPhases = (
+				BEEC1BF01C03941400E7A322 /* Sources */,
+				BEEC1BF11C03941400E7A322 /* Frameworks */,
+				BEEC1BF21C03941400E7A322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rounded Polygons";
+			productName = "Rounded Polygons";
+			productReference = BEEC1BF41C03941400E7A322 /* Rounded Polygons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEEC1BEC1C03941400E7A322 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Silver Fox";
+				TargetAttributes = {
+					BEEC1BF31C03941400E7A322 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 6G5LMQ72D8;
+					};
+				};
+			};
+			buildConfigurationList = BEEC1BEF1C03941400E7A322 /* Build configuration list for PBXProject "Rounded Polygons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEEC1BEB1C03941400E7A322;
+			productRefGroup = BEEC1BF51C03941400E7A322 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEEC1BF31C03941400E7A322 /* Rounded Polygons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEEC1BF21C03941400E7A322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEC1C021C03941400E7A322 /* LaunchScreen.storyboard in Resources */,
+				BEEC1BFF1C03941400E7A322 /* Assets.xcassets in Resources */,
+				BEEC1BFD1C03941400E7A322 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEEC1BF01C03941400E7A322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEC1BFA1C03941400E7A322 /* ViewController.swift in Sources */,
+				BEDDBC541C14F0010020420B /* UIBezierPathExtension.swift in Sources */,
+				BEEC1BF81C03941400E7A322 /* AppDelegate.swift in Sources */,
+				BEEC1C0A1C03943400E7A322 /* RoundedRegularPolygonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEEC1BFB1C03941400E7A322 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEC1BFC1C03941400E7A322 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEEC1C001C03941400E7A322 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEC1C011C03941400E7A322 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEEC1C041C03941400E7A322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEEC1C051C03941400E7A322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEEC1C071C03941400E7A322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Rounded Polygons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.Rounded-Polygons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rounded Polygons/Rounded Polygons-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEEC1C081C03941400E7A322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Rounded Polygons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.Rounded-Polygons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rounded Polygons/Rounded Polygons-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEEC1BEF1C03941400E7A322 /* Build configuration list for PBXProject "Rounded Polygons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEC1C041C03941400E7A322 /* Debug */,
+				BEEC1C051C03941400E7A322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEEC1C061C03941400E7A322 /* Build configuration list for PBXNativeTarget "Rounded Polygons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEC1C071C03941400E7A322 /* Debug */,
+				BEEC1C081C03941400E7A322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEEC1BEC1C03941400E7A322 /* Project object */;
+}
