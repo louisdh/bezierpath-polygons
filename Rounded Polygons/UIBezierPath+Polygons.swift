@@ -42,7 +42,7 @@ extension UIBezierPath {
 	
 	private func polygonPoints(sides: Int, x: CGFloat, y: CGFloat, radius: CGFloat) -> [CGPoint] {
 		
-		if sides.count < 3 { return [] }
+		if sides < 3 { return [] }
 		
 		let angle = degreesToRadians(360 / CGFloat(sides))
 		
