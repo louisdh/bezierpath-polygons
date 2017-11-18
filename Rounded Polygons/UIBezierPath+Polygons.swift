@@ -53,7 +53,7 @@ extension UIBezierPath {
 		
 	}
 	
-	private func polygonPoints(sides: Int, x: CGFloat, y: CGFloat, radius: CGFloat) -> [CGPoint] {
+	private func polygonPoints(sides: Int, center: CGPoint, radius: CGFloat) -> [CGPoint] {
 		
 		guard sides >= 3 else {
 			return []
@@ -61,9 +61,7 @@ extension UIBezierPath {
 		
 		let angle = degreesToRadians(360 / CGFloat(sides))
 		
-		let cx = x // x origin
-		let cy = y // y origin
-		let r  = radius // radius of circle
+		let r = radius
 		
 		var points = [CGPoint]()
 		points.reserveCapacity(sides)
@@ -72,8 +70,8 @@ extension UIBezierPath {
 			
 			let i = CGFloat(i)
 			
-			let pX = cx + r * cos(angle * i)
-			let pY = cy + r * sin(angle * i)
+			let pX = center.x + r * cos(angle * i)
+			let pY = center.y + r * sin(angle * i)
 			points.append(CGPoint(x: pX, y: pY))
 			
 		}
@@ -151,7 +149,9 @@ public extension UIBezierPath {
 		
 		self.init()
 		
-		let points = polygonPoints(sides: numberOfSides, x: rect.width / 2, y: rect.height / 2, radius: min(rect.width, rect.height) / 2)
+		let center = CGPoint(x: rect.width / 2, y: rect.height / 2)
+		
+		let points = polygonPoints(sides: numberOfSides, center: center, radius: min(rect.width, rect.height) / 2)
 		
 		self.addPointsAsRoundedPolygon(points: points, cornerRadius: cornerRadius)
 		
