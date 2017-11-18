@@ -196,20 +196,8 @@ public extension UIBezierPath {
 	
 }
 
-func degreesToRadians(_ value: Double) -> CGFloat {
-	return CGFloat(value * .pi / 180.0)
-}
-
 func degreesToRadians(_ value: CGFloat) -> CGFloat {
-	return degreesToRadians(Double(value))
-}
-
-func radiansToDegrees(_ value: Double) -> CGFloat {
-	return CGFloat((180.0 / .pi) * value)
-}
-
-func radiansToDegrees(_ value: CGFloat) -> CGFloat {
-	return radiansToDegrees(Double(value))
+	return value * .pi / 180.0
 }
 
 extension CGPoint {
