@@ -13,7 +13,9 @@ extension UIBezierPath {
 
 	private func addPointsAsRoundedPolygon(points: [CGPoint], cornerRadius: CGFloat) {
 		
-		if points.count == 0 { return }
+		guard !points.isEmpty else {
+			return
+		}
 		
 		lineCapStyle = .round
 		usesEvenOddFillRule = true
@@ -42,7 +44,9 @@ extension UIBezierPath {
 	
 	private func polygonPoints(sides: Int, x: CGFloat, y: CGFloat, radius: CGFloat) -> [CGPoint] {
 		
-		if sides < 3 { return [] }
+		guard sides >= 3 else {
+			return []
+		}
 		
 		let angle = degreesToRadians(360 / CGFloat(sides))
 		
@@ -125,6 +129,7 @@ public extension UIBezierPath {
 
 	@objc
 	public convenience init(roundedRegularPolygon rect: CGRect, numberOfSides: Int, cornerRadius: CGFloat) {
+		
 		guard numberOfSides > 2 else {
 			self.init()
 			return
