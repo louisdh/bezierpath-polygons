@@ -155,7 +155,7 @@ public extension UIBezierPath {
 public extension UIBezierPath {
 
 	@objc
-	public func applyRotation(angle: CGFloat) {
+	public func applyRotation(_ angle: CGFloat) {
 		
 		let bounds = self.cgPath.boundingBox
 		let center = CGPoint(x: bounds.midX, y: bounds.midY)
@@ -172,7 +172,7 @@ public extension UIBezierPath {
 	}
 	
 	@objc
-	public func applyScale(scale: CGPoint) {
+	public func applyScale(_ scale: CGPoint) {
 		
 		let center = CGPoint(x: bounds.midX, y: bounds.midY)
 		

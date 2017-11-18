@@ -50,9 +50,9 @@ public class RoundedRegularPolygonView: UIView {
 		
 		let polygonPath = UIBezierPath(roundedRegularPolygon: rect, numberOfSides: sides, cornerRadius: cornerRadius)
 
-		polygonPath.applyRotation(angle: rotation)
+		polygonPath.applyRotation(rotation)
 		
-		polygonPath.applyScale(scale: scale)
+		polygonPath.applyScale(scale)
 		
 		polygonPath.close()
 		
