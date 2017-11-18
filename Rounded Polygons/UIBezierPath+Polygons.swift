@@ -61,14 +61,17 @@ extension UIBezierPath {
 		let cy = y // y origin
 		let r  = radius // radius of circle
 		
-		var i = 0
 		var points = [CGPoint]()
+		points.reserveCapacity(sides)
 		
-		while i < sides {
-			let xP = cx + r * cos(angle * CGFloat(i))
-			let yP = cy + r * sin(angle * CGFloat(i))
-			points.append(CGPoint(x: xP, y: yP))
-			i += 1
+		for i in 0..<sides {
+			
+			let i = CGFloat(i)
+			
+			let pX = cx + r * cos(angle * i)
+			let pY = cy + r * sin(angle * i)
+			points.append(CGPoint(x: pX, y: pY))
+			
 		}
 		
 		return points
