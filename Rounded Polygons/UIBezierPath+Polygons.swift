@@ -97,34 +97,34 @@ extension UIBezierPath {
 		
 		let adjustedCornerRadius = cornerRadius / θ * (.pi / 4)
 		
-		// r tan(θ)
-		let rTanTheta = adjustedCornerRadius * tan(θ)
-		var startPoint = CGPoint()
-		
-		startPoint.x = curr.x + rTanTheta * c2p.x
-		startPoint.y = curr.y + rTanTheta * c2p.y
-		
-		var endPoint = CGPoint()
-		endPoint.x = curr.x + rTanTheta * c2n.x
-		endPoint.y = curr.y + rTanTheta * c2n.y
-		
+		// r * tan(θ)
+		let rTanθ = adjustedCornerRadius * tan(θ)
+
+		let startX = curr.x + rTanθ * c2p.x
+		let startY = curr.y + rTanθ * c2p.y
+		let start = CGPoint(x: startX, y: startY)
+
 		if !first {
 			
 			// Go perpendicular from start point by corner radius
-			var centerPoint = CGPoint()
-			centerPoint.x = startPoint.x + c2p.y * adjustedCornerRadius
-			centerPoint.y = startPoint.y - c2p.x * adjustedCornerRadius
-			
+			let centerX = start.x + c2p.y * adjustedCornerRadius
+			let centerY = start.y - c2p.x * adjustedCornerRadius
+			let center = CGPoint(x: centerX, y: centerY)
+
 			let startAngle = atan2(c2p.x, -c2p.y)
 			let endAngle = startAngle + (2 * θ)
 			
-			addLine(to: startPoint)
-			addArc(withCenter: centerPoint, radius: adjustedCornerRadius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
-
+			addLine(to: start)
+			
+			addArc(withCenter: center, radius: adjustedCornerRadius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
 			
 		} else {
 			
-			move(to: endPoint)
+			let endX = curr.x + rTanθ * c2n.x
+			let endY = curr.y + rTanθ * c2n.y
+			let end = CGPoint(x: endX, y: endY)
+
+			move(to: end)
 			
 		}
 		
