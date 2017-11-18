@@ -105,11 +105,11 @@ extension UIBezierPath {
 		// r * tan(θ)
 		let rTanθ = adjustedCornerRadius * tan(θ)
 
-		let startX = curr.x + rTanθ * c2p.x
-		let startY = curr.y + rTanθ * c2p.y
-		let start = CGPoint(x: startX, y: startY)
-
 		if !first {
+			
+			let startX = curr.x + rTanθ * c2p.x
+			let startY = curr.y + rTanθ * c2p.y
+			let start = CGPoint(x: startX, y: startY)
 			
 			// Go perpendicular from start point by corner radius
 			let centerX = start.x + c2p.y * adjustedCornerRadius
