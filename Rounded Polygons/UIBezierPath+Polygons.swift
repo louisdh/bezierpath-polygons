@@ -26,6 +26,13 @@ extension UIBezierPath {
 		let curr = points[0 % len]
 		let next = points[1 % len]
 		
+		var cornerRadius = cornerRadius
+		
+		let maxCornerRadius = points[0].distance(to: points[1]) / 2.0
+		if cornerRadius > maxCornerRadius {
+			cornerRadius = maxCornerRadius
+		}
+		
 		addPoint(prev: prev, curr: curr, next: next, cornerRadius: cornerRadius, first: true)
 		
 		for i in 0..<len {
@@ -196,4 +203,14 @@ func radiansToDegrees(_ value: Double) -> CGFloat {
 
 func radiansToDegrees(_ value: CGFloat) -> CGFloat {
 	return radiansToDegrees(Double(value))
+}
+
+extension CGPoint {
+	
+	func distance(to point: CGPoint) -> CGFloat {
+		let a = self
+		let b = point
+		return hypot(a.x-b.x, a.y-b.y)
+	}
+	
 }
