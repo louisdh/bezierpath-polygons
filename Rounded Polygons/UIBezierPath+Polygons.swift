@@ -28,9 +28,13 @@ extension UIBezierPath {
 		
 		var cornerRadius = cornerRadius
 		
-		let maxCornerRadius = points[0].distance(to: points[1]) / 2.0
-		if cornerRadius > maxCornerRadius {
-			cornerRadius = maxCornerRadius
+		if cornerRadius < 0 {
+			cornerRadius = 0
+		} else {
+			let maxCornerRadius = points[0].distance(to: points[1]) / 2.0
+			if cornerRadius > maxCornerRadius {
+				cornerRadius = maxCornerRadius
+			}
 		}
 		
 		addPoint(prev: prev, curr: curr, next: next, cornerRadius: cornerRadius, first: true)
