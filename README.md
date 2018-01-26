@@ -2,6 +2,7 @@
 
 [![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat")](https://developer.apple.com/swift/)
 [![Twitter](https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat)](http://twitter.com/LouisDhauwe)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/louisdhauwe)
 
 This project adds a convenience initalizer to UIBezierPath for generating n-sided regular polygon paths – with rounded corners support – in Swift! 
 
